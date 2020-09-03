@@ -65,7 +65,7 @@
                   <td :class="bodyClass('vuetable-td-'+field.name, field)"
                     :key="fieldIndex"
                     :style="{width: field.width}"
-                    v-html="renderNormalField(field, item)"
+                    v-text="renderNormalField(field, item)"
                     @click="onCellClicked(item, itemIndex, field, $event)"
                     @dblclick="onCellDoubleClicked(item, itemIndex, field, $event)"
                     @contextmenu="onCellRightClicked(item, itemIndex, field, $event)"
